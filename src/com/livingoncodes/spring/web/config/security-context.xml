@@ -53,7 +53,7 @@
 	</security:http>
 	<security:global-method-security secured-annotations="enabled"></security:global-method-security>
 
-	<bean id="passwordEncoder"
+	<bean id="passwordEncoder"  
 		class="org.springframework.security.crypto.password.StandardPasswordEncoder">
 	</bean>
 </beans>

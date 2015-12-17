@@ -18,7 +18,11 @@
     <!-- Bootstrap core CSS -->
     
     <link href="<c:url value='/static/lib/bootstrap/css/bootstrap.min.css' />" rel="stylesheet">
-
+    <!-- Custom Css -->
+    
+    <!-- Custom Image -->
+    
+    <!-- Custom Font -->
     <!-- Custom styles for this template -->
     <link href="<c:url value='/static/css/notices-main.css' />" rel="stylesheet">
 

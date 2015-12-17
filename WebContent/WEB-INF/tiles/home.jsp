@@ -3,8 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
-
-
+<div class="col-md-4"></div>
+<div class="col-md-4">
 	<p><a href="${pageContext.request.contextPath}/notices">Show current notices</a></p>	
 	<p><a href="${pageContext.request.contextPath}/createnotice">Create Notice</a></p>	
 
@@ -19,6 +19,8 @@
 	<sec:authorize access="hasRole('ROLE_ADMIN')">
 		<p><a href="<c:url value='/admin' />">Admin page</a></p>
 	</sec:authorize>
+</div>
+<div class="col-md-4"></div>
 
 
 

@@ -9,6 +9,7 @@
 				<th>Name</th>
 				<th>Email</th>
 				<th>Notice</th>
+				<th>edit</th>
 			</tr>
 			<c:forEach var="notice" items="${notices}">
 				<tr>
@@ -16,6 +17,9 @@
 					<td><c:out value="${notice.name}"></c:out></td>
 					<td><c:out value="${notice.email}"></c:out></td>
 					<td><c:out value="${notice.text}"></c:out></td>
+					<td><div class="btn btn-primary">Delete</div>
+					
+					</td>
 				</tr>
 
 

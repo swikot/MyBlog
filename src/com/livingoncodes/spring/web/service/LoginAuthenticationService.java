@@ -31,7 +31,7 @@ public class LoginAuthenticationService implements UserDetailsService{
 		try{
 			com.livingoncodes.spring.web.dao.User login = usersDao.getUserByName(username);
 			System.out.println(login);
-			userDetails = new User(login.getUsername(), login.getPassword(), true, true, true, true, buildAuthority(""));
+			userDetails = new User(login.getUsername(), login.getPassword(), true, true, true, true,buildAuthority(""));
 
 		}catch (Exception e){
 			e.printStackTrace();
@@ -41,10 +41,14 @@ public class LoginAuthenticationService implements UserDetailsService{
 
 	public List <GrantedAuthority> buildAuthority(String userType){
 		Set<GrantedAuthority> setAuths = new HashSet<GrantedAuthority>();
-		setAuths.add(new SimpleGrantedAuthority("ROLE_USER"));
+		setAuths.add(new SimpleGrantedAuthority(""));
+		
+		
+
 		return  new ArrayList<>(setAuths);
 
 	}
+
 
 
 }

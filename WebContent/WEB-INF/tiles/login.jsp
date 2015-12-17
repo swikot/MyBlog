@@ -11,8 +11,8 @@
 
 </script>
 
-	<div class="col-md-6 col-md-offset-3">
-		<form class="form-horizontal"
+	<div class="content">
+		<form class="content"
 			action="${pageContext.request.contextPath}/j_spring_security_check"
 			method="post">
 			<fieldset>
