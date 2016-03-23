@@ -1,2 +1,2 @@
-# MyBlog
-A Simple Spring MVC template
+# Notice Publisher
+A Simple Spring MVC template for publishing and viewing notices
